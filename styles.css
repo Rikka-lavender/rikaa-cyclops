@@ -1,0 +1,136 @@
+body {
+    background-color: #d1b7a1;
+}
+
+header {
+    background: #6f4e37;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.main-content {
+    padding: 40px 0;
+}
+
+.display-4 {
+    color: #fff;
+}
+
+.lead {
+    font-size: 1.25em;
+    color: #fff;
+}
+
+.btn-danger {
+    background-color: #ff6b6b;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #ee5253;
+}
+body {
+    background-color: #f9f1e9;
+}
+
+h1 {
+    color: #000;
+}
+
+.card-title {
+    color: #000;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #000;
+}
+body {
+    background-color: #f9f1e9;
+}
+
+h1 {
+    color: #000;
+}
+
+.form-label {
+    font-weight: bold;
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: #ff6b6b;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #ee5253;
+}
+body {
+    background-color: #d0bb94;
+}
+
+h1 {
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.card-title {
+    color: #000;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #000;
+}
+
+.btn-primary {
+    background-color: #ff6b6b;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #ee5253;
+}
+.hero-section {
+    background-image: url('images/gg.jpg');
+    /* Replace with the path to your image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    /* Adjust padding as needed */
+}
+
+
+/* Highlight active link in the navbar */
+header .nav-link.active {
+    color: #ff6f61;
+    /* Change to your preferred color */
+    font-weight: bold;
+}
+.order-section h2 {
+    font-weight: bold;
+    color: #000;
+}
+
+.order-summary {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.milk_tea-carousel img {
+    max-width: 600px;
+    /* Adjust as needed */
+    max-height: 600px;
+    /* Adjust as needed */
+    margin: 0 auto;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Order - Augustea</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Order Section -->
+    <section class="order-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Place Your Order</h2>
+            <form id="orderForm" class="row g-4">
+
+                <!-- Bubble Tea Options -->
+                <div class="col-md-6">
+                    <h5>Choose Your Bubble Tea</h5>
+
+                    <!-- Flavor Selection -->
+                    <div class="mb-3">
+                        <label for="flavor" class="form-label">Flavor</label>
+                        <select class="form-select" id="flavor" required>
+                            <option value="" disabled selected>Select flavor</option>
+                            <option value="black_milk_tea">Black Milk Tea</option>
+                            <option value="green_milk_tea">Green Milk Tea</option>
+                            <option value="strawberry_milk_tea">Strawberry Milk Tea</option>
+                            <option value="mango_milk_tea">Mango Milk Tea</option>
+                        </select>
+                    </div>
+
+                    <!-- Size Selection -->
+                    <div class="mb-3">
+                        <label for="size" class="form-label">Size</label>
+                        <select class="form-select" id="size" required>
+                            <option value="" disabled selected>Select size</option>
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </div>
+
+                    <!-- Toppings Selection -->
+                    <div class="mb-3">
+                        <label class="form-label">Toppings</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="boba" id="boba">
+                            <label class="form-check-label" for="boba">Boba</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="jelly" id="jelly">
+                            <label class="form-check-label" for="jelly">Jelly</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="pudding" id="pudding">
+                            <label class="form-check-label" for="pudding">Pudding</label>
+                        </div>
+                    </div>
+
+                    <!-- Quantity Selection -->
+                    <div class="mb-3">
+                        <label for="quantity" class="form-label">Quantity</label>
+                        <input type="number" class="form-control" id="quantity" min="1" value="1" required>
+                    </div>
+                </div>
+
+                <!-- Customer Information -->
+                <div class="col-md-6">
+                    <h5>Your Information</h5>
+
+                    <!-- Name -->
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" required>
+                    </div>
+
+                    <!-- Address -->
+                    <div class="mb-3">
+                        <label for="address" class="form-label">Delivery Address</label>
+                        <textarea class="form-control" id="address" rows="3" required></textarea>
+                    </div>
+
+                    <!-- Order Summary (optional) -->
+                    <h5 class="mt-4">Order Summary</h5>
+                    <div id="orderSummary" class="border p-3">
+                        <!-- Summary will be dynamically updated using JavaScript -->
+                        <p class="text-muted">Please select options to see the summary.</p>
+                    </div>
+                </div>
+
+                <!-- Submit Order Button -->
+                <div class="col-12 text-center">
+                    <button type="button" class="btn btn-primary" onclick="submitOrder()">Submit Order</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Augustea</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="bg-light py-3">
+        <nav class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand" href="#">
+                <img src="images/android-chrome-192x192.png" alt="Augustea" class="logo">
+            </a>
+            <ul class="nav">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
+                <li class="nav-item"><a href="order.html" class="nav-link active">Order</a></li>
+                <li class="nav-item"><a href="about-us.html" class="nav-link">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">ORDER</h1>
+        <form action="/submit-order" method="POST">
+            <!-- Milk Tea Selection -->
+            <div class="mb-3">
+                <label for="milkTeaType" class="form-label">Choose Milk Tea Flavor</label>
+                <select class="form-select" id="milkTeaType" name="milkTeaType" required>
+                    <option value="" disabled selected>Select a flavor</option>
+                    <option value="wintermelon_tea">Wintermelon Tea</option>
+                    <option value="oolong_milk_tea">Oolong Milk Tea</option>
+                    <option value="okinawa_milk_tea">Okinawa Milk Tea</option>
+                    <option value="oreo_milk_tea">Oreo Milk Tea</option>
+                    <option value="matcha_milk_tea">Matcha Milk Tea</option>
+                    <option value="thai_milk_tea">Thai Milk Tea</option>
+                </select>
+            </div>
+
+            <!-- Size Selection -->
+            <div class="mb-3">
+                <label for="size" class="form-label">Choose Size</label>
+                <select class="form-select" id="size" name="size" required>
+                    <option value="" disabled selected>Select a size</option>
+                    <option value="small">Small - $3.50</option>
+                    <option value="medium">Medium - $4.50</option>
+                    <option value="large">Large - $5.50</option>
+                    <option value="large">XLarge - $7.00</option>
+                </select>
+            </div>
+
+            <!-- Toppings Selection -->
+            <div class="mb-3">
+                <label class="form-label">Select Toppings (Optional)</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="toppings" value="boba" id="toppingBoba">
+                    <label class="form-check-label" for="toppingBoba">Boba (+$2.00)</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="toppings" value="jelly" id="toppingJelly">
+                    <label class="form-check-label" for="toppingJelly">Jelly (+$2.00)</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="toppings" value="pudding" id="toppingPudding">
+                    <label class="form-check-label" for="toppingPudding">Pudding (+$2.00)</label>
+                </div>
+            </div>
+
+            <!-- Quantity Selection -->
+            <div class="mb-3">
+                <label for="quantity" class="form-label">Quantity</label>
+                <input type="number" class="form-control" id="quantity" name="quantity" min="1" value="1" required>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="text-center">
+                <a href="place_order.html" class="btn btn-primary">Place Order</a>
+            </div>
+        </form>
+                
+    </div>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p>Contact Information</p>
+            <p>0985-900-3326</p>
+            <p>augustea@gmail.com</p>
+            <p>Leyte, Leyte</p>
+            <p>&copy; 2024 Augustea. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

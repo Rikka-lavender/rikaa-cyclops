@@ -134,3 +134,12 @@ header .nav-link.active {
 body {
     font-family: 'Poppins', sans-serif;
 }
+.btn-brown {
+        background-color: #8B4513; /* Brown color */
+        color: white; /* Text color */
+        border: none; /* Remove border */
+    }
+
+    .btn-brown:hover {
+        background-color: #A0522D; /* Slightly lighter brown on hover */
+    }
